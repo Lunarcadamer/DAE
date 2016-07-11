@@ -1,0 +1,309 @@
+body {
+  font-family: Helvetica;
+  padding-top: 6em; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+
+
+/* Home */
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #F6BB42;
+}
+
+.reviews {
+	color: #d17581;
+}
+
+
+
+
+/* Game */
+
+.thumbnail {
+    padding: 0;
+    overflow: hidden;
+}
+
+.thumbnail .game-info, .game-info {
+	margin-bottom: 1em;
+}
+
+.game-header h1 {
+	margin-top: 0;
+}
+
+.game-header p {
+	line-height: 1.5em;
+}
+
+.buy-row .buy-label {
+	float: left;
+	margin-top: 0.2em;
+	width: 30%;
+}
+
+.buy-row input {
+	text-align: right;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+	
+	float: right;
+	margin-bottom: 1em;
+	width: 70%;
+}
+
+.buy-row .price {
+	font-size: 1.8em;
+	
+	float: right;
+}
+
+.overall-rating, .overall-stars {
+	color: #ffcc00;
+	font-size: 1.4em;
+	text-align: center;
+	
+	margin: 0;
+}
+
+.overall-stars span {
+	margin: 0 0.1em;
+}
+
+.overall-reviews {
+	color: #d17581;
+	font-size: 0.8em;
+	text-align: center;
+	text-transform: uppercase;
+	
+	margin: 1.5em 0 0;
+}
+
+.review-number {
+	font-size: 1.6em;
+	text-transform: none;
+}
+
+.meta-label {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	
+	margin-bottom: 0.2em;
+}
+
+.well {
+	margin-bottom: 2em;
+}
+
+.well h3 {
+	margin-bottom: 1em;
+}
+
+.well .commenter {
+	text-transform: capitalize;
+	font-size: 1.2em;
+	
+	display: block;
+	margin-top: 0.4em;
+}
+
+.well .glyphicon {
+	color: #ffcc00;
+}
+
+.well .date {
+	color: #d17581;
+}
+
+.star-input {
+	display: none;
+}
+
+#star-1:checked ~ section [for='star-1'] svg,
+#star-2:checked ~ section [for='star-1'] svg,
+#star-2:checked ~ section [for='star-2'] svg,
+#star-3:checked ~ section [for='star-1'] svg,
+#star-3:checked ~ section [for='star-2'] svg,
+#star-3:checked ~ section [for='star-3'] svg,
+#star-4:checked ~ section [for='star-1'] svg,
+#star-4:checked ~ section [for='star-2'] svg,
+#star-4:checked ~ section [for='star-3'] svg,
+#star-4:checked ~ section [for='star-4'] svg,
+#star-5:checked ~ section [for='star-1'] svg,
+#star-5:checked ~ section [for='star-2'] svg,
+#star-5:checked ~ section [for='star-3'] svg,
+#star-5:checked ~ section [for='star-4'] svg,
+#star-5:checked ~ section [for='star-5'] svg {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+#star-1:checked ~ section [for='star-1'] svg path,
+#star-2:checked ~ section [for='star-1'] svg path,
+#star-2:checked ~ section [for='star-2'] svg path,
+#star-3:checked ~ section [for='star-1'] svg path,
+#star-3:checked ~ section [for='star-2'] svg path,
+#star-3:checked ~ section [for='star-3'] svg path,
+#star-4:checked ~ section [for='star-1'] svg path,
+#star-4:checked ~ section [for='star-2'] svg path,
+#star-4:checked ~ section [for='star-3'] svg path,
+#star-4:checked ~ section [for='star-4'] svg path,
+#star-5:checked ~ section [for='star-1'] svg path,
+#star-5:checked ~ section [for='star-2'] svg path,
+#star-5:checked ~ section [for='star-3'] svg path,
+#star-5:checked ~ section [for='star-4'] svg path,
+#star-5:checked ~ section [for='star-5'] svg path {
+	fill: #FFBB00;
+	stroke: #cc9600;
+}
+
+.star-selection {
+	width: 20em;
+	margin-bottom: 1.2em;
+}
+
+.star-selection label {
+	display: inline-block;
+	width: 2em;
+	text-align: center;
+	cursor: pointer;
+}
+
+.star-selection svg {
+	width: 100%;
+	height: auto;
+	fill: white;
+	stroke: #CCC;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	-webkit-transition: -webkit-transform 200ms ease-in-out;
+	transition: -webkit-transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.star-selection svg path {
+	-webkit-transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+	transition: fill 200ms ease-in-out, stroke 100ms ease-in-out;
+}
+
+textarea {
+	resize: vertical;
+}
+
+
+
+
+/* Search */
+
+.search-form input[type=submit] {
+	margin-top: 1em;
+}
+
+.search-form .radio {
+	margin-top: 1.6em;
+}
+
+	.search-form .radio label {
+		margin-right: 1.4em;
+	}
+
+.search-results-header {
+	margin-bottom: 0.1em;
+}
+
+.all-games {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+.search-tag {
+	background: #434A54;
+	
+	display: inline-block;
+	padding: 0.35em 0.8em 0.3em;
+	margin: 0.3em 0 1em;
+}
+
+	.search-tag p {
+		margin: 0;
+		display: inline-block;
+		color: white;
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	
+	.search-tag a {
+		margin-left: 0.6em;
+		color: #48CFAD;
+		text-decoration: none;
+		transition: all .25s;
+	}
+		.search-tag a:hover {
+			color: aquamarine;
+			text-decoration: none;
+		}
+		
+.modify-button {
+	color: #48CFAD;
+	font-family: Helvetica;
+	font-size: 0.6em;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .25s;
+}
+
+	.modify-button div {
+		background: #3C3B3D;
+		
+		display: inline-block;
+		padding: 0.5em 1.2em;
+	}
+	
+	.modify-button:hover {
+		color: aquamarine;
+		text-decoration: none;
+	}
+
+
+
+
+/* Comment Posted Successfully */
+
+.back-to-game {
+	margin-top: 1em;
+}
+
+
+footer {
+    margin: 50px 0;
+}
